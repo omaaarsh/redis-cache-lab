@@ -1,0 +1,36 @@
+{
+  "name": "redis-cache-lab",
+  "version": "0.0.1",
+  "description": "Standalone NestJS app to learn Redis caching by hand — cache-aside, invalidation, and stampede protection.",
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "build": "nest build",
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down"
+  },
+  "dependencies": {
+    "@nestjs/cache-manager": "^3.1.0",
+    "@nestjs/common": "^11.0.15",
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/core": "^11.1.16",
+    "@nestjs/event-emitter": "^3.0.1",
+    "@nestjs/platform-express": "^11.1.16",
+    "@nestjs/typeorm": "^11.0.2",
+    "cache-manager": "^7.2.8",
+    "ioredis": "^6.0.0",
+    "keyv": "^5.6.0",
+    "pg": "^8.12.0",
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.10",
+    "@nestjs/schematics": "^11.1.0",
+    "@types/node": "^20.3.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.3"
+  }
+}
